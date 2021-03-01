@@ -1,0 +1,132 @@
+<<<<<<< HEAD
+## Steps to add file or project to GITHUB using cmd!!!
+
+**Before Starting we need to set username and email id using "git config":
+
+$ git config : This command sets the author name and email address respectively to be used with your commits.
+
+		Syntax : git config --global user.name “[name]”  
+			   git config --global user.name "abc"
+
+
+		Syntax: git config --global user.email “[email address]”
+			   git config --global user.emali "abc@gmail.com"
+
+$ git status: The git status command displays the state of the working directory and the staging area.
+		Syntax : git status
+=======================================================================================================================
+
+1) git init: The git init command initialize a new, empty Git repository.	
+	     It generates a file as ".git" which is by default hidden.
+	    	Syntax: git init
+
+2) git add:  The git add command adds a change in the working directory to the staging area. 
+	     It tells Git that you want to include updates to a particular file in the next commit.
+	     One can add single or multiple Files.
+		Syntax : git add . (add all files in the folder)
+			 git add [filename] (adds single file)
+
+3) git commit: In Git, commit is the term used for saving changes. 
+	       Git does not add changes to a commit automatically. 
+	       You need to indicate which file and changes need to be saved before running the Git commit command. 
+		Syntax : git commit -m “[ Type in the commit message]”
+
+4) git remote: This command is used to connect your local repository to the remote repository.
+		Syntax : git remote add [variable name] [Remote Server Link]
+				git remote add origin master(or main)	
+###############	
+   
+Optional Step - 
+-> Github recently renamed master branch as main branch.
+-> In git bash if it is still showing master branch, then rename it.
+-> $ git branch -m master main
+
+OR
+
+-> Rename main to master on github itself and follow the remaining steps as it is. 
+
+##############
+
+**** If there are already file in repository then we first need to pull those files and then push it.
+
+5) git pull:This command fetches and merges changes from a remote repository and immediately update the local repository
+		Syntax : git pull [variable name] [branch name]
+				git pull origin master(or main)
+				
+				**Try Either of these commands if it shows error!!
+				git pull [Repository Link]
+				OR
+				git pull origin master --allow-unrelated-histories
+
+
+6) git push: The git push command is used to upload local repository content to a remote repository.
+		Syntax : git push [variable name] [branch name] 
+				git push origin master(or main) (The main branch is called master)
+
+=======
+## Steps to add file or project to GITHUB using cmd!!!
+
+**Before Starting we need to set username and email id using "git config":
+
+$ git config : This command sets the author name and email address respectively to be used with your commits.
+
+		Syntax : git config --global user.name “[name]”  
+			   git config --global user.name "abc"
+
+
+		Syntax: git config --global user.email “[email address]”
+			   git config --global user.emali "abc@gmail.com"
+
+$ git status: The git status command displays the state of the working directory and the staging area.
+		Syntax : git status
+=======================================================================================================================
+
+1) git init: The git init command initialize a new, empty Git repository.	
+	     It generates a file as ".git" which is by default hidden.
+	    	Syntax: git init
+
+2) git add:  The git add command adds a change in the working directory to the staging area. 
+	     It tells Git that you want to include updates to a particular file in the next commit.
+	     One can add single or multiple Files.
+		Syntax : git add . (add all files in the folder)
+			 git add [filename] (adds single file)
+
+3) git commit: In Git, commit is the term used for saving changes. 
+	       Git does not add changes to a commit automatically. 
+	       You need to indicate which file and changes need to be saved before running the Git commit command. 
+		Syntax : git commit -m “[ Type in the commit message]”
+
+4) git remote: This command is used to connect your local repository to the remote repository.
+		Syntax : git remote add [variable name] [Remote Server Link]
+				git remote add origin master(or main)	
+###############	
+   
+Optional Step - 
+-> Github recently renamed master branch as main branch.
+-> In git bash if it is still showing master branch, then rename it.
+-> $ git branch -m master main
+
+OR
+
+-> Rename main to master on github itself and follow the remaining steps as it is. 
+
+##############
+
+**** If there are already file in repository then we first need to pull those files and then push it.
+
+5) git pull:This command fetches and merges changes from a remote repository and immediately update the local repository
+		Syntax : git pull [variable name] [branch name]
+				git pull origin master(or main)
+				
+				**Try Either of these commands if it shows error!!
+				git pull [Repository Link]
+				OR
+				git pull origin master --allow-unrelated-histories
+
+
+6) git push: The git push command is used to upload local repository content to a remote repository.
+		Syntax : git push [variable name] [branch name] 
+				git push origin master(or main) (The main branch is called master)
+
+>>>>>>> b1860b8ebe8891d3d82e6424378035699b87b3c1
+=======================================================================================================================
